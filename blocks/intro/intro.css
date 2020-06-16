@@ -1,0 +1,8 @@
+@import url(./__title/intro__title.css);
+@import url(./__text/intro__text.css);
+@import url(./__stats-list/intro__stats-list.css);
+@import url(./__stats-item/intro__stats-item.css);
+@import url(./__stat-name/intro__stat-name.css);
+.intro {
+  padding: 0 442px 0 148px;
+}

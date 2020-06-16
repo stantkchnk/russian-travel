@@ -1,0 +1,12 @@
+.place-card__descr {
+  padding: 0;
+  margin: 0 0 24px 0;
+  font-family: Inter;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.place-card__descr:last-of-type {
+  margin-bottom: 0;
+}

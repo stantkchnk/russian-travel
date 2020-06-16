@@ -1,0 +1,8 @@
+@import url(./_size/subtitle_size_l.css);
+@import url(./_size/subtitle_size_s.css);
+
+.subtitle {
+  font-family: Inter;
+  font-style: normal;
+  margin: 0;
+}

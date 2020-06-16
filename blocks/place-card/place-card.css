@@ -1,0 +1,14 @@
+@import url(./__image/place-card__image.css);
+@import url(./__title/place-card__title.css);
+@import url(./__link-container/place-card__link-container.css);
+@import url(./__link-title/place-card__link-title.css);
+@import url(./__link/place-card__link.css);
+@import url(./__descr-container/place-card__descr-container.css);
+@import url(./__descr/place-card__descr.css);
+
+.place-card {
+  display: grid;
+  grid-template-columns: 46.74796748% 1fr;
+  /*grid-template-rows: 1fr 440px;*/
+  grid-gap: 48px 40px;
+}

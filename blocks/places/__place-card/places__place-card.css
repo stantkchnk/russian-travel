@@ -1,0 +1,7 @@
+.places__place-card {
+  margin-bottom: 80px;
+}
+
+.places__place-card:last-of-type {
+  margin-bottom: 0;
+}

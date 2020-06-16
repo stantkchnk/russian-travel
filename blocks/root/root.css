@@ -1,0 +1,11 @@
+@import url(./__header/root__header.css);
+@import url(./__lead/root__lead.css);
+@import url(./__footer/root__footer.css);
+
+.root {
+  background-color: #2a2c2f;
+  max-width: 1280px;
+  min-width: 320px;
+  margin: 0 auto;
+  color: #fff;
+}

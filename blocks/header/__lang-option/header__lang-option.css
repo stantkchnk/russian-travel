@@ -1,0 +1,3 @@
+.header__lang-option:nth-of-type(odd) {
+  margin-right: 18px;
+}
