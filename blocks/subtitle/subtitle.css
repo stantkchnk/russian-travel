@@ -2,7 +2,7 @@
 @import url(./_size/subtitle_size_s.css);
 
 .subtitle {
-  font-family: Inter;
   font-style: normal;
+  font-weight: normal;
   margin: 0;
 }

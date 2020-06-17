@@ -1,5 +1,5 @@
 .lead__title {
   text-align: center;
   max-width: 720px;
-  margin-bottom: 38px;
+  margin-bottom: calc(32% / 1280 * 100);
 }

@@ -4,5 +4,5 @@
 @import url(./__stats-item/intro__stats-item.css);
 @import url(./__stat-name/intro__stat-name.css);
 .intro {
-  padding: 0 442px 0 148px;
+  padding-left: calc(148% / 1280 * 100);
 }

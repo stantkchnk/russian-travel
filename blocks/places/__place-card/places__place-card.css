@@ -1,5 +1,5 @@
 .places__place-card {
-  margin-bottom: 80px;
+  margin-bottom: calc(80% / 984 * 100);
 }
 
 .places__place-card:last-of-type {

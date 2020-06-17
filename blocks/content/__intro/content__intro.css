@@ -1,4 +1,5 @@
 .content__intro {
-  min-width: 690px;
-  margin-bottom: 87px;
+  max-width: 690px;
+  width: calc(690% / 1280 * 100);
+  margin-bottom: calc(92% / 1280 * 100);
 }

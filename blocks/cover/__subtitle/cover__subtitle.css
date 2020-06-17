@@ -1,3 +1,5 @@
 .cover__subtitle {
   text-align: center;
+  width: calc(360% / 1148 * 100);
+  margin: 0 auto;
 }

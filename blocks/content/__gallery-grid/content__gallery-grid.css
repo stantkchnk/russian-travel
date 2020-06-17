@@ -1,3 +1,4 @@
 .content__gallery-grid {
-  margin-bottom: 92px;
+  margin: 0 auto calc(92% / 1280 * 100);
+  width: calc(1184% / 1280 * 100);
 }

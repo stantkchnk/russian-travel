@@ -1,12 +1,11 @@
 .lead__subtext {
   margin: 0;
   text-transform: uppercase;
-  font-family: Inter;
   font-style: normal;
   font-weight: normal;
   font-size: 10px;
   line-height: 14px;
   letter-spacing: 0.15em;
-  margin-left: 148px;
+  margin-left: calc(148% / 1280 * 100);
   align-self: flex-start;
 }

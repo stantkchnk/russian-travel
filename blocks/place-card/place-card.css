@@ -8,7 +8,7 @@
 
 .place-card {
   display: grid;
-  grid-template-columns: 46.74796748% 1fr;
+  grid-template-columns: calc(460% / 984 * 100) 1fr;
   /*grid-template-rows: 1fr 440px;*/
   grid-gap: 48px 40px;
 }
