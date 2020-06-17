@@ -2,3 +2,15 @@
   /* margin-bottom: 56px; */
   margin-bottom: calc(56% / 1280 * 100);
 }
+
+@media (max-width: 1024px) {
+  .root__header {
+    margin-bottom: calc(48% / 1024 * 100);
+  }
+}
+
+@media (max-width: 320px) {
+  .root__header {
+    margin-bottom: calc(48% / 320 * 100);
+  }
+}

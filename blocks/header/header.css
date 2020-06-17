@@ -11,3 +11,27 @@
   /* padding: 28px 48px 0; */
   padding: calc(28% / 1280 * 100) calc(48% / 1280 * 100) 0;
 }
+
+@media (max-width: 1024px) {
+  .header {
+    padding: calc(28% / 1024 * 100) calc(28% / 1024 * 100) 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: calc(28% / 768 * 100) calc(24% / 768 * 100) 0;
+  }
+}
+
+/* @media (max-width: 425px) {
+  .header {
+    padding: calc(16% / 320 * 100) calc(16% / 320 * 100) 0;
+  }
+} */
+
+@media (max-width: 320px) {
+  .header {
+    padding: calc(16% / 320 * 100) calc(16% / 320 * 100) 0;
+  }
+}
