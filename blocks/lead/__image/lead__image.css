@@ -2,5 +2,24 @@
   max-width: 984px;
   width: calc(984% / 1280 * 100);
   object-fit: cover;
-  margin-bottom: calc(8% / 1280 * 100);
+  margin-bottom: 8px;
+}
+
+@media (max-width: 1024px) {
+  .lead__image {
+    max-width: 928px;
+    width: calc(928% / 1024 * 100);
+  }
+}
+
+@media (max-width: 768px) {
+  .lead__image {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .lead__image {
+    width: 100%;
+  }
 }

@@ -9,3 +9,21 @@
   margin-left: calc(148% / 1280 * 100);
   align-self: flex-start;
 }
+
+@media (max-width: 1024px) {
+  .lead__subtext {
+    margin-left: calc(48% / 1024 * 100);
+  }
+}
+
+@media (max-width: 768px) {
+  .lead__subtext {
+    margin-left: calc(24% / 768 * 100);
+  }
+}
+
+@media (max-width: 320px) {
+  .lead__subtext {
+    margin-left: calc(16% / 320 * 100);
+  }
+}

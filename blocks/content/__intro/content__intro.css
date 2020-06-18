@@ -3,3 +3,26 @@
   width: calc(690% / 1280 * 100);
   margin-bottom: calc(92% / 1280 * 100);
 }
+
+@media (max-width: 1024px) {
+  .content__intro {
+    width: calc(690% / 1024 * 100);
+    margin-bottom: calc(92% / 1024 * 100);
+  }
+}
+
+@media (max-width: 768px) {
+  .content__intro {
+    max-width: 720px;
+    width: calc(720% / 768 * 100);
+    margin-bottom: calc(88% / 768 * 100);
+  }
+}
+
+@media (max-width: 320px) {
+  .content__intro {
+    max-width: 288px;
+    width: calc(288% / 320 * 100);
+    margin-bottom: calc(64% / 320 * 100);
+  }
+}

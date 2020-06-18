@@ -3,6 +3,31 @@
 @import url(./__stats-list/intro__stats-list.css);
 @import url(./__stats-item/intro__stats-item.css);
 @import url(./__stat-name/intro__stat-name.css);
+
 .intro {
   padding-left: calc(148% / 1280 * 100);
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: calc(28% / 1024 * 100) calc(28% / 1024 * 100) 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: calc(28% / 768 * 100) calc(24% / 768 * 100) 0;
+  }
+}
+
+/* @media (max-width: 425px) {
+  .header {
+    padding: calc(16% / 320 * 100) calc(16% / 320 * 100) 0;
+  }
+} */
+
+@media (max-width: 320px) {
+  .header {
+    padding: calc(16% / 320 * 100) calc(16% / 320 * 100) 0;
+  }
 }
