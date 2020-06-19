@@ -6,23 +6,10 @@
 
 .intro {
   padding-left: calc(148% / 1280 * 100);
-
 }
 
 @media (max-width: 1024px) {
   .intro {
-    padding: 0 calc(28% / 1024 * 100) 0 calc(28% / 1024 * 100);
-  }
-}
-
-@media (max-width: 768px) {
-  .intro {
-    padding: 0 calc(28% / 768 * 100) 0 calc(24% / 768 * 100);
-  }
-}
-
-@media (max-width: 320px) {
-  .intro {
-    padding: 0 calc(16% / 320 * 100) 0 calc(16% / 320 * 100);
+    padding: 0;
   }
 }

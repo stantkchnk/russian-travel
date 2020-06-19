@@ -7,7 +7,7 @@
 @media (max-width: 1024px) {
   .content__intro {
     width: calc(690% / 1024 * 100);
-    margin-bottom: calc(92% / 1024 * 100);
+    margin: 0 auto calc(92% / 1024 * 100);
   }
 }
 
@@ -15,7 +15,7 @@
   .content__intro {
     max-width: 720px;
     width: calc(720% / 768 * 100);
-    margin-bottom: calc(88% / 768 * 100);
+    margin: 0 auto calc(88% / 768 * 100);
   }
 }
 
@@ -23,6 +23,6 @@
   .content__intro {
     max-width: 288px;
     width: calc(288% / 320 * 100);
-    margin-bottom: calc(64% / 320 * 100);
+    margin: 0 auto calc(64% / 320 * 100);
   }
 }
