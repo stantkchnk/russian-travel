@@ -15,11 +15,12 @@
 
 @media (max-width: 768px) {
   .cover {
-  background-image: url(../../images/cover/768x480-x2.jpg);
+    background-image: url(../../images/cover/768x480-x2.jpg);
   }
 }
 
 @media (max-width: 320px) {
   .cover {
     background-image: url(../../images/cover/320x200-x2.jpg);
+  }
 }
