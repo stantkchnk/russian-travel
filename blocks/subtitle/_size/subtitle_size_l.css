@@ -3,6 +3,20 @@
   line-height: 36px;
 }
 
+@media (max-width: 720px) {
+  .subtitle_size_l {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .subtitle_size_l {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
 @media (max-width: 320px) {
   .subtitle_size_l {
     font-size: 16px;

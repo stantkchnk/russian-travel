@@ -6,6 +6,18 @@
   flex-direction: row;
 }
 
+@media (max-width: 767px) {
+  .footer__links {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 @media (max-width: 320px) {
   .footer__links {
     flex-direction: column;

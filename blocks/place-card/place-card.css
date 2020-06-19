@@ -26,10 +26,15 @@
   }
 }
 
+@media (max-width: 768px) {
+  .place-card {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 320px) {
   .place-card {
     grid-template-columns: 100%;
     grid-row-gap: calc(32 / 320 * 100vw);
   }
 }
-

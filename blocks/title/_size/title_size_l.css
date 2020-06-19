@@ -2,3 +2,17 @@
   font-size: 72px;
   line-height: 76px;
 }
+
+@media (max-width: 720px) {
+  .title_size_l {
+    font-size: 40px;
+    line-height: 44px;
+  }
+}
+
+@media (max-width: 320px) {
+  .title_size_l {
+    font-size: 32px;
+    line-height: 35px;
+  }
+}

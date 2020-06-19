@@ -12,6 +12,14 @@
 
 @media (max-width: 768px) {
   .lead__subtitle {
+    max-width: 640px;
+    margin-bottom: calc(56% / 768 * 100);
+  }
+}
+
+@media (max-width: 720px) {
+  .lead__subtitle {
+    max-width: 85%;
     margin-bottom: calc(56% / 768 * 100);
   }
 }

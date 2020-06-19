@@ -10,8 +10,16 @@
   padding-top: 7.1875%;
 }
 
+@media (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media (max-width: 320px) {
   .footer {
     flex-direction: column;
+    align-items: flex-start;
   }
 }

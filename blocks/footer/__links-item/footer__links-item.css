@@ -6,6 +6,12 @@
   margin-right: 0;
 }
 
+@media (max-width: 600px) {
+  .footer__links-item {
+    margin-bottom: 24px;
+  }
+}
+
 @media (max-width: 320px) {
   .footer__links-item {
     margin-bottom: 32px;

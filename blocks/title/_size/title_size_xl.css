@@ -3,6 +3,20 @@
   line-height: 100px;
 }
 
+@media (max-width: 720px) {
+  .title_size_xl {
+    font-size: 54px;
+    line-height: 58px;
+  }
+}
+
+@media (max-width: 425px) {
+  .title_size_xl {
+    font-size: 44px;
+    line-height: 48px;
+  }
+}
+
 @media (max-width: 320px) {
   .title_size_xl {
     font-size: 40px;
