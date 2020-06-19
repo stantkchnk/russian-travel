@@ -10,3 +10,10 @@
 .place-card__descr:last-of-type {
   margin-bottom: 0;
 }
+
+@media (max-width: 768px) {
+  .place-card__descr {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}

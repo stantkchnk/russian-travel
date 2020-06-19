@@ -6,3 +6,20 @@
   background-image: url(../../images/cover/1184x740-x2.jpg);
   background-size: cover;
 }
+
+@media (max-width: 1024px) {
+  .cover {
+    background-image: url(../../images/cover/1024x640-x2.jpg);
+  }
+}
+
+@media (max-width: 768px) {
+  .cover {
+  background-image: url(../../images/cover/768x480-x2.jpg);
+  }
+}
+
+@media (max-width: 320px) {
+  .cover {
+    background-image: url(../../images/cover/320x200-x2.jpg);
+}

@@ -1,3 +1,21 @@
 .gallery-grid__item_photo_10 {
   background-image: url(../../../../images/gallery/284x213-x2/gallery-item-10.jpg);
 }
+
+@media (max-width: 1024px) {
+  .gallery-grid__item_photo_10 {
+    background-image: url(../../../../images/gallery/300x225-x2/gallery-item-10.jpg);
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-grid__item_photo_10 {
+    background-image: url(../../../../images/gallery/352x264-x2/gallery-item-10.jpg);
+  }
+}
+
+@media (max-width: 320px) {
+  .gallery-grid__item_photo_10 {
+    background-image: url(../../../../images/gallery/288x216-x2/gallery-item-10.jpg);
+  }
+}

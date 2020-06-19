@@ -1,2 +1,8 @@
 .place-card__descr-container {
 }
+
+@media (max-width: 320px) {
+  .place-card__descr-container {
+    padding: 0 calc(16% / 320 * 100);
+  }
+}

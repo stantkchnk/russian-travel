@@ -9,6 +9,27 @@
 .place-card {
   display: grid;
   grid-template-columns: calc(460% / 984 * 100) 1fr;
-  /*grid-template-rows: 1fr 440px;*/
-  grid-gap: 48px 40px;
+  grid-gap: calc(48 / 1280 * 100vw) calc(40 / 1280 * 100vw);
 }
+
+@media (max-width: 1024px) {
+  .place-card {
+    grid-template-columns: calc(460% / 984 * 100) 1fr;
+    grid-column-gap: calc(32 / 1024 * 100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .place-card {
+    grid-template-columns: calc(460% / 984 * 100) 1fr;
+    grid-column-gap: calc(28 / 768 * 100vw);
+  }
+}
+
+@media (max-width: 320px) {
+  .place-card {
+    grid-template-columns: 100%;
+    grid-row-gap: calc(32 / 320 * 100vw);
+  }
+}
+

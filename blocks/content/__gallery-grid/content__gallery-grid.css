@@ -2,3 +2,24 @@
   margin: 0 auto calc(92% / 1280 * 100);
   width: calc(1184% / 1280 * 100);
 }
+
+@media (max-width: 1024px) {
+  .content__gallery-grid {
+    margin-bottom: calc(92% / 1024 * 100);
+    width: calc(928% / 1024 * 100);
+  }
+}
+
+@media (max-width: 768px) {
+  .content__gallery-grid {
+    margin-bottom: calc(88% / 768 * 100);
+    width: calc(720% / 768 * 100);
+  }
+}
+
+@media (max-width: 320px) {
+  .content__gallery-grid {
+    margin-bottom: calc(64% / 320 * 100);
+    width: calc(288% / 320 * 100);
+  }
+}
