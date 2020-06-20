@@ -5,10 +5,15 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 28px;
+  transition: opacity 250ms ease-in;
 }
 
 .header__lang-link:visited {
   color: #fff;
+}
+
+.header__lang-link:hover {
+  opacity: 0.8;
 }
 
 @media (max-width: 720px) {

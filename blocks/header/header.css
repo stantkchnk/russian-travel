@@ -2,7 +2,7 @@
 @import url(./__lang-switch/header__lang-switch.css);
 @import url(./__lang-option/header__lang-option.css);
 @import url(./__lang-link/header__lang-link.css);
-@import url(./__lang-option/_active/header__lang-option_active.css);
+@import url(./__lang-link/_active/header__lang-link_active.css);
 
 .header {
   display: flex;
@@ -23,7 +23,6 @@
     padding: calc(28% / 768 * 100) calc(24% / 768 * 100) 0;
   }
 }
-
 
 @media (max-width: 320px) {
   .header {

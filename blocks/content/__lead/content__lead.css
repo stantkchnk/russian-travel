@@ -1,21 +1,21 @@
-.root__lead {
+.content__lead {
   margin-bottom: calc(92% / 1280 * 100);
 }
 
 @media (max-width: 1024px) {
-  .root__lead {
+  .content__lead {
     margin-bottom: calc(92% / 1024 * 100);
   }
 }
 
 @media (max-width: 768px) {
-  .root__lead {
+  .content__lead {
     margin-bottom: calc(88% / 768 * 100);
   }
 }
 
 @media (max-width: 320px) {
-  .root__lead {
+  .content__lead {
     margin-bottom: calc(64% / 320 * 100);
   }
 }

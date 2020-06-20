@@ -3,6 +3,8 @@
   text-align: center;
   max-width: 560px;
   margin: 0 auto 32px;
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 768px) {
@@ -12,6 +14,13 @@
 
 @media (max-width: 720px) {
   .cover__title {
-    max-width: 85%;
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 425px) {
+  .cover__title {
+    max-width: 95%;
+    margin-bottom: 16px;
   }
 }

@@ -7,7 +7,7 @@
 @media (max-width: 1024px) {
   .content__intro {
     width: calc(690% / 1024 * 100);
-    margin: 0 auto calc(92% / 1024 * 100);
+    margin: 0 0 calc(92% / 1024 * 100);
   }
 }
 

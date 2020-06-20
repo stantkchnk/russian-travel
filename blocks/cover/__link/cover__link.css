@@ -1,0 +1,31 @@
+.cover__link {
+  text-decoration: none;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+  display: block;
+  padding-top: calc(245% / 1184 * 100);
+  padding-bottom: calc(245% / 1184 * 100);
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .cover__link {
+    padding-top: calc(195% / 1024 * 100);
+    padding-bottom: calc(195% / 1024 * 100);
+  }
+}
+
+@media (max-width: 768px) {
+  .cover__link {
+    padding-top: calc(115% / 768 * 100);
+    padding-bottom: calc(115% / 768 * 100);
+  }
+}
+
+@media (max-width: 320px) {
+  .cover__link {
+    padding-top: calc(33 / 320 * 100%);
+    padding-bottom: calc(33 / 320 * 100%);
+  }
+}

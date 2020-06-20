@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
 
-  <body>
+  <body class="body">
     <div class="root">
       <!-- Верхний колонтитул -->
       <header class="header root__header">
@@ -29,44 +29,50 @@
           alt="Логотип с силуэтом территории и надписью U+0022РоссияU+0022"
         />
         <ul class="header__lang-switch">
-          <li class="header__lang-option header__lang-option_active">
-            <a class="header__lang-link" href="#">Ru</a>
+          <li class="header__lang-option">
+            <a class="header__lang-link header__lang-link_active" href="#"
+              >Ru</a
+            >
           </li>
           <li class="header__lang-option">
             <a class="header__lang-link" href="#">En</a>
           </li>
         </ul>
       </header>
-      <!-- Заглавная секция -->
-      <section class="lead root__lead">
-        <h1 class="title lead__title title_size_xl">
-          Путешествия по&nbsp;России
-        </h1>
-        <p class="subtitle lead__subtitle subtitle_size_l">
-          Настоящая страна не&nbsp;в&nbsp;выпусках новостей, а&nbsp;здесь.
-        </p>
 
-        <img
-          class="lead__image"
-          srcset="
-            ./images/lead-image/320x200-x2.jpg 320w,
-            ./images/lead-image/768x480-x2.jpg 768w,
-            ./images/lead-image/928x580-x2.jpg 928w,
-            ./images/lead-image/984x615-x2.jpg 984w
-          "
-          sizes="      
+      <!-- Основное содержимое -->
+      <main class="content">
+        <!-- Заглавная секция -->
+        <section class="lead content__lead">
+          <h1 class="title lead__title title_size_xl">
+            Путешествия по&nbsp;России
+          </h1>
+          <p class="subtitle lead__subtitle subtitle_size_l">
+            Настоящая страна не&nbsp;в&nbsp;выпусках новостей, а&nbsp;здесь.
+          </p>
+          <figure class="lead__figure">
+            <img
+              class="lead__image"
+              srcset="
+                ./images/lead-image/320x200-x2.jpg 320w,
+                ./images/lead-image/768x480-x2.jpg 768w,
+                ./images/lead-image/928x580-x2.jpg 928w,
+                ./images/lead-image/984x615-x2.jpg 984w
+              "
+              sizes="      
             (min-width: 320px) 100vw,     
             (min-width: 768px) 100vw, 
             (min-width: 1024px) calc(100vw * 0.90625), 
             (min-width: 1280px) calc(100vw * 0.76875)
           "
-          src="./images/lead-image/320x200-x2.jpg"
-          alt="Спальное место купе в поезде напротив окна и наложенный график маршрута"
-        />
-        <p class="lead__subtext">ваша полка&nbsp;&mdash; верхняя</p>
-      </section>
-      <!-- Основное содержимое -->
-      <main class="content">
+              src="./images/lead-image/320x200-x2.jpg"
+              alt="Спальное место купе в поезде напротив окна и наложенный график маршрута"
+            />
+            <figcaption class="lead__subtext">
+              ваша полка&nbsp;&mdash; верхняя
+            </figcaption>
+          </figure>
+        </section>
         <!-- Секция вступления -->
         <section class="intro content__intro">
           <h2 class="title title_size_s intro__title">
@@ -110,19 +116,189 @@
           </ul>
         </section>
         <!-- Секция галлереи -->
-        <section class="gallery-grid content__gallery-grid">
-          <div class="gallery-grid__item gallery-grid__item_photo_1"></div>
-          <div class="gallery-grid__item gallery-grid__item_photo_2"></div>
-          <div class="gallery-grid__item gallery-grid__item_photo_3"></div>
-          <div class="gallery-grid__item gallery-grid__item_photo_4"></div>
-          <div class="gallery-grid__item gallery-grid__item_photo_5"></div>
-          <div class="gallery-grid__item gallery-grid__item_photo_6"></div>
-          <div class="gallery-grid__item gallery-grid__item_photo_7"></div>
-          <div class="gallery-grid__item gallery-grid__item_photo_8"></div>
-          <div class="gallery-grid__item gallery-grid__item_photo_9"></div>
-          <div class="gallery-grid__item gallery-grid__item_photo_10"></div>
-          <div class="gallery-grid__item gallery-grid__item_photo_11"></div>
-          <div class="gallery-grid__item gallery-grid__item_photo_12"></div>
+        <section class="gallery content__gallery">
+          <ul class="gallery-grid">
+            <li class="galliry-grid__item">
+              <img
+                class="gallery-grid__photo"
+                srcset="
+                  ./images/gallery/284x213-x2/gallery-item-1.jpg 284w,
+                  ./images/gallery/288x216-x2/gallery-item-1.jpg 288w,
+                  ./images/gallery/300x225-x2/gallery-item-1.jpg 300w,
+                  ./images/gallery/352x264-x2/gallery-item-1.jpg 352w,
+
+                "
+                sizes="(min-width: 320px) 95vw, (min-width: 768px) calc(100vw * 0.458333333333), (min-width: 1024px) calc(100vw * 0.29296875), (min-width: 1280px) calc(100vw * 0.221875)"
+                src="./images/gallery/284x213-x2/gallery-item-1.jpg"
+                alt="Открытое окно поезда, в котором видно зеленую степную местость."
+              />
+            </li>
+            <li class="galliry-grid__item">
+              <img
+                class="gallery-grid__photo"
+                srcset="
+                  ./images/gallery/284x213-x2/gallery-item-2.jpg 284w,
+                  ./images/gallery/288x216-x2/gallery-item-2.jpg 288w,
+                  ./images/gallery/300x225-x2/gallery-item-2.jpg 300w,
+                  ./images/gallery/352x264-x2/gallery-item-2.jpg 352w,
+
+                "
+                sizes="(min-width: 320px) 95vw, (min-width: 768px) calc(100vw * 0.458333333333), (min-width: 1024px) calc(100vw * 0.29296875), (min-width: 1280px) calc(100vw * 0.221875)"
+                src="./images/gallery/284x213-x2/gallery-item-2.jpg"
+                alt="Заснеженная гористая местность с кучевыми облаками в солнечный день."
+              />
+            </li>
+            <li class="galliry-grid__item">
+              <img
+                class="gallery-grid__photo"
+                srcset="
+                  ./images/gallery/284x213-x2/gallery-item-3.jpg 284w,
+                  ./images/gallery/288x216-x2/gallery-item-3.jpg 288w,
+                  ./images/gallery/300x225-x2/gallery-item-3.jpg 300w,
+                  ./images/gallery/352x264-x2/gallery-item-3.jpg 352w,
+
+                "
+                sizes="(min-width: 320px) 95vw, (min-width: 768px) calc(100vw * 0.458333333333), (min-width: 1024px) calc(100vw * 0.29296875), (min-width: 1280px) calc(100vw * 0.221875)"
+                src="./images/gallery/284x213-x2/gallery-item-3.jpg"
+                alt="Собака на тюке сена во время туманного рассвета в сельской местности."
+              />
+            </li>
+            <li class="galliry-grid__item">
+              <img
+                class="gallery-grid__photo"
+                srcset="
+                  ./images/gallery/284x213-x2/gallery-item-4.jpg 284w,
+                  ./images/gallery/288x216-x2/gallery-item-4.jpg 288w,
+                  ./images/gallery/300x225-x2/gallery-item-4.jpg 300w,
+                  ./images/gallery/352x264-x2/gallery-item-4.jpg 352w,
+
+                "
+                sizes="(min-width: 320px) 95vw, (min-width: 768px) calc(100vw * 0.458333333333), (min-width: 1024px) calc(100vw * 0.29296875), (min-width: 1280px) calc(100vw * 0.221875)"
+                src="./images/gallery/284x213-x2/gallery-item-4.jpg"
+                alt="Верхушка соснового леса в тумане."
+              />
+            </li>
+            <li class="galliry-grid__item">
+              <img
+                class="gallery-grid__photo"
+                srcset="
+                  ./images/gallery/284x213-x2/gallery-item-5.jpg 284w,
+                  ./images/gallery/288x216-x2/gallery-item-5.jpg 288w,
+                  ./images/gallery/300x225-x2/gallery-item-5.jpg 300w,
+                  ./images/gallery/352x264-x2/gallery-item-5.jpg 352w,
+
+                "
+                sizes="(min-width: 320px) 95vw, (min-width: 768px) calc(100vw * 0.458333333333), (min-width: 1024px) calc(100vw * 0.29296875), (min-width: 1280px) calc(100vw * 0.221875)"
+                src="./images/gallery/284x213-x2/gallery-item-5.jpg"
+                alt="Задняя часть автомобиля, стоящего на повехности замерзшего озера."
+              />
+            </li>
+            <li class="galliry-grid__item">
+              <img
+                class="gallery-grid__photo"
+                srcset="
+                  ./images/gallery/284x213-x2/gallery-item-6.jpg 284w,
+                  ./images/gallery/288x216-x2/gallery-item-6.jpg 288w,
+                  ./images/gallery/300x225-x2/gallery-item-6.jpg 300w,
+                  ./images/gallery/352x264-x2/gallery-item-6.jpg 352w,
+
+                "
+                sizes="(min-width: 320px) 95vw, (min-width: 768px) calc(100vw * 0.458333333333), (min-width: 1024px) calc(100vw * 0.29296875), (min-width: 1280px) calc(100vw * 0.221875)"
+                src="./images/gallery/284x213-x2/gallery-item-6.jpg"
+                alt="Песчаный берег с коричневым песком и виднеющимся вдали холмом."
+              />
+            </li>
+            <li class="galliry-grid__item">
+              <img
+                class="gallery-grid__photo"
+                srcset="
+                  ./images/gallery/284x213-x2/gallery-item-7.jpg 284w,
+                  ./images/gallery/288x216-x2/gallery-item-7.jpg 288w,
+                  ./images/gallery/300x225-x2/gallery-item-7.jpg 300w,
+                  ./images/gallery/352x264-x2/gallery-item-7.jpg 352w,
+
+                "
+                sizes="(min-width: 320px) 95vw, (min-width: 768px) calc(100vw * 0.458333333333), (min-width: 1024px) calc(100vw * 0.29296875), (min-width: 1280px) calc(100vw * 0.221875)"
+                src="./images/gallery/284x213-x2/gallery-item-7.jpg"
+                alt="Острые скалы с засыпанными снегом вершинами."
+              />
+            </li>
+            <li class="galliry-grid__item">
+              <img
+                class="gallery-grid__photo"
+                srcset="
+                  ./images/gallery/284x213-x2/gallery-item-8.jpg 284w,
+                  ./images/gallery/288x216-x2/gallery-item-8.jpg 288w,
+                  ./images/gallery/300x225-x2/gallery-item-8.jpg 300w,
+                  ./images/gallery/352x264-x2/gallery-item-8.jpg 352w,
+
+                "
+                sizes="(min-width: 320px) 95vw, (min-width: 768px) calc(100vw * 0.458333333333), (min-width: 1024px) calc(100vw * 0.29296875), (min-width: 1280px) calc(100vw * 0.221875)"
+                src="./images/gallery/284x213-x2/gallery-item-8.jpg"
+                alt="Дорожный знак места пешеходного переход на фоне сложенных в кучу водяных буев на замерзшем озере."
+              />
+            </li>
+            <li class="galliry-grid__item">
+              <img
+                class="gallery-grid__photo"
+                srcset="
+                  ./images/gallery/284x213-x2/gallery-item-9.jpg 284w,
+                  ./images/gallery/288x216-x2/gallery-item-9.jpg 288w,
+                  ./images/gallery/300x225-x2/gallery-item-9.jpg 300w,
+                  ./images/gallery/352x264-x2/gallery-item-9.jpg 352w,
+
+                "
+                sizes="(min-width: 320px) 95vw, (min-width: 768px) calc(100vw * 0.458333333333), (min-width: 1024px) calc(100vw * 0.29296875), (min-width: 1280px) calc(100vw * 0.221875)"
+                src="./images/gallery/284x213-x2/gallery-item-9.jpg"
+                alt="Гористая местность, покрытая туманом."
+              />
+            </li>
+            <li class="galliry-grid__item">
+              <img
+                class="gallery-grid__photo"
+                srcset="
+                  ./images/gallery/284x213-x2/gallery-item-10.jpg 284w,
+                  ./images/gallery/288x216-x2/gallery-item-10.jpg 288w,
+                  ./images/gallery/300x225-x2/gallery-item-10.jpg 300w,
+                  ./images/gallery/352x264-x2/gallery-item-10.jpg 352w,
+
+                "
+                sizes="(min-width: 320px) 95vw, (min-width: 768px) calc(100vw * 0.458333333333), (min-width: 1024px) calc(100vw * 0.29296875), (min-width: 1280px) calc(100vw * 0.221875)"
+                src="./images/gallery/284x213-x2/gallery-item-10.jpg"
+                alt="Гора в лучах солнца."
+              />
+            </li>
+            <li class="galliry-grid__item">
+              <img
+                class="gallery-grid__photo"
+                srcset="
+                  ./images/gallery/284x213-x2/gallery-item-11.jpg 284w,
+                  ./images/gallery/288x216-x2/gallery-item-11.jpg 288w,
+                  ./images/gallery/300x225-x2/gallery-item-11.jpg 300w,
+                  ./images/gallery/352x264-x2/gallery-item-11.jpg 352w,
+
+                "
+                sizes="(min-width: 320px) 95vw, (min-width: 768px) calc(100vw * 0.458333333333), (min-width: 1024px) calc(100vw * 0.29296875), (min-width: 1280px) calc(100vw * 0.221875)"
+                src="./images/gallery/284x213-x2/gallery-item-11.jpg"
+                alt="Холмистый берег в ясный зимний день."
+              />
+            </li>
+            <li class="galliry-grid__item">
+              <img
+                class="gallery-grid__photo"
+                srcset="
+                  ./images/gallery/284x213-x2/gallery-item-12.jpg 284w,
+                  ./images/gallery/288x216-x2/gallery-item-12.jpg 288w,
+                  ./images/gallery/300x225-x2/gallery-item-12.jpg 300w,
+                  ./images/gallery/352x264-x2/gallery-item-12.jpg 352w,
+
+                "
+                sizes="(min-width: 320px) 95vw, (min-width: 768px) calc(100vw * 0.458333333333), (min-width: 1024px) calc(100vw * 0.29296875), (min-width: 1280px) calc(100vw * 0.221875)"
+                src="./images/gallery/284x213-x2/gallery-item-12.jpg"
+                alt="Плотный туман в гористой местности"
+              />
+            </li>
+          </ul>
         </section>
         <!-- Секция карточек мест -->
         <section class="places content__places">
@@ -132,7 +308,7 @@
                 Куршская коса
               </h2>
               <div class="place-card__link-container">
-                <p class="place-card__link-title">URL</p>
+                <p class="place-card__link-title">url</p>
                 <a class="place-card__link" href="http://park-kosa.ru"
                   >park-kosa.ru</a
                 >
@@ -176,10 +352,11 @@
             <li class="place-card places__place-card">
               <h2 class="title title_size_m place-card__title">Кольский</h2>
               <div class="place-card__link-container">
-                <p class="place-card__link-title">URL</p>
+                <p class="place-card__link-title">url</p>
                 <a
                   class="place-card__link"
                   href="https://yourshot.nationalgeographic.com/photos/?keywords=kolskiy"
+                  target="_blank"
                   >National Geographic</a
                 >
               </div>
@@ -222,10 +399,11 @@
             <li class="place-card places__place-card">
               <h2 class="title title_size_m place-card__title">Алтай</h2>
               <div class="place-card__link-container">
-                <p class="place-card__link-title">URL</p>
+                <p class="place-card__link-title">url</p>
                 <a
                   class="place-card__link"
                   href="https://www.facebook.com/vera.bashmakova/posts/10156011613718822"
+                  target="_blank"
                   >Facebook</a
                 >
               </div>
@@ -270,8 +448,11 @@
                 Зимний Байкал
               </h2>
               <div class="place-card__link-container">
-                <p class="place-card__link-title">URL</p>
-                <a class="place-card__link" href="https://vk.com/baikalmile"
+                <p class="place-card__link-title">url</p>
+                <a
+                  class="place-card__link"
+                  href="https://vk.com/baikalmile"
+                  target="_blank"
                   >https://vk.com/baikalmile</a
                 >
               </div>
@@ -312,8 +493,11 @@
             <li class="place-card places__place-card">
               <h2 class="title title_size_m place-card__title">Карелия</h2>
               <div class="place-card__link-container">
-                <p class="place-card__link-title">URL</p>
-                <a class="place-card__link" href="http://vodlozero.ru/"
+                <p class="place-card__link-title">url</p>
+                <a
+                  class="place-card__link"
+                  href="http://vodlozero.ru/"
+                  target="_blank"
                   >http://vodlozero.ru/</a
                 >
               </div>
@@ -355,7 +539,11 @@
         </section>
         <!-- Секция До Байкала "на собаках" -->
         <section class="cover content__cover">
-          <div class="cover__overlay">
+          <a
+            href="https://stampsy.com/na-elektrichkakh-do-baikala"
+            class="cover__link"
+            target="_blank"
+          >
             <h2 class="title title_size_l cover__title">
               До&nbsp;Байкала &laquo;на&nbsp;собаках&raquo;
             </h2>
@@ -364,33 +552,53 @@
               и&nbsp;iframes&nbsp;&mdash; путешествие от столицы до&nbsp;Байкала
               на&nbsp;электричках.
             </p>
-          </div>
+          </a>
         </section>
       </main>
       <!-- Нижний колонтитул -->
       <footer class="footer root__footer">
-        <ul class="footer__links">
-          <li class="footer__links-item">
-            <a class="footer__link" href="https://yandex.ru/maps">Карты</a>
-          </li>
-          <li class="footer__links-item">
-            <a class="footer__link" href="https://yandex.ru/pogoda">Погода</a>
-          </li>
-          <li class="footer__links-item">
-            <a class="footer__link" href="https://rasp.yandex.ru">Расписание</a>
-          </li>
-          <li class="footer__links-item">
-            <a class="footer__link" href="https://calendar.yandex.ru"
-              >Календарь</a
-            >
-          </li>
-          <li class="footer__links-item">
-            <a class="footer__link" href="https://travel.yandex.ru"
-              >Путешествия</a
-            >
-          </li>
-        </ul>
-        <p class="footer__author">@ 2020. Станислав Ткаченко</p>
+        <nav class="footer__nav">
+          <ul class="footer__links">
+            <li class="footer__links-item">
+              <a
+                class="footer__link"
+                href="https://yandex.ru/maps"
+                target="_blank"
+                >Карты</a
+              >
+            </li>
+            <li class="footer__links-item">
+              <a
+                class="footer__link"
+                href="https://yandex.ru/pogoda"
+                target="_blank"
+                >Погода</a
+              >
+            </li>
+            <li class="footer__links-item">
+              <a
+                class="footer__link"
+                href="https://rasp.yandex.ru"
+                target="_blank"
+                >Расписание</a
+              >
+            </li>
+            <li class="footer__links-item">
+              <a
+                class="footer__link"
+                href="https://calendar.yandex.ru"
+                target="_blank"
+                >Календарь</a
+              >
+            </li>
+            <li class="footer__links-item">
+              <a class="footer__link" href="https://travel.yandex.ru"
+                >Путешествия</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <p class="footer__author">© 2020. Станислав Ткаченко</p>
       </footer>
     </div>
   </body>

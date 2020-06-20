@@ -10,6 +10,12 @@
 
 @media (max-width: 1024px) {
   .intro {
-    padding: 0;
+    padding-left: calc(48% / 1280 * 100);
+  }
+}
+
+@media (max-width: 768px) {
+  .intro {
+    padding-left: 0;
   }
 }
